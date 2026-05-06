@@ -19,7 +19,10 @@
       "architect": {
         "build": {
           "builder": "@angular/build:application",
-          "options": {
+          "options":  {
+            "stylePreprocessorOptions": {
+            "includePaths": ["src/styles"]
+           },
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
